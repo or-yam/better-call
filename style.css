@@ -111,6 +111,30 @@ footer a {
   animation: blink 2s infinite;
 }
 
+.audio-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#play,
+#stop {
+  font-family: 'vcr-osd';
+  font-size: 22px;
+  margin: 6px;
+  place-self: self-end;
+  color: #fdea01;
+  text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red;
+  background-color: transparent;
+  border: none;
+}
+
+#play,
+#stop:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     width: 75%;
